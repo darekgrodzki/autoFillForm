@@ -1,0 +1,33 @@
+{
+  "name": "autofillform",
+  "version": "1.0.0",
+  "description": "autoFillForm",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1",
+    "styled-components": "^1.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darekgrodzki/autoFillForm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/darekgrodzki/autoFillForm/issues"
+  },
+  "homepage": "https://github.com/darekgrodzki/autoFillForm#readme"
+}
