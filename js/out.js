@@ -6490,7 +6490,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.InputSecond = exports.Mydiv = exports.Input = undefined;
 
-var _templateObject = _taggedTemplateLiteral(['\ncolor: #666;\nwidth: 300px;\nbackground:\njustify-content: center;\n&:focus {\n  background: red;\n}\n'], ['\ncolor: #666;\nwidth: 300px;\nbackground:\njustify-content: center;\n&:focus {\n  background: red;\n}\n']),
+var _templateObject = _taggedTemplateLiteral(['\ncolor: #666;\nwidth: 300px;\nbackground:\njustify-content: center;\n&:focus {\n  background: Aquamarine;\n}\n'], ['\ncolor: #666;\nwidth: 300px;\nbackground:\njustify-content: center;\n&:focus {\n  background: Aquamarine;\n}\n']),
     _templateObject2 = _taggedTemplateLiteral(['\nwidth: 400px;\ndisplay: flex;\nflex-direction: column;\nalign-items: center;\nmargin: 50px auto;\n\n'], ['\nwidth: 400px;\ndisplay: flex;\nflex-direction: column;\nalign-items: center;\nmargin: 50px auto;\n\n']),
     _templateObject3 = _taggedTemplateLiteral(['\nwidth: 400px;\nmargin-bottom: 20px;\n'], ['\nwidth: 400px;\nmargin-bottom: 20px;\n']);
 
@@ -9716,7 +9716,7 @@ var App = function (_React$Component) {
 
             var list = [];
             this.state.cities.forEach(function (item, index) {
-                if (item.name.indexOf(_this2.state.filter) > -1 || item.code.indexOf(_this2.state.filter) > -1) {
+                if (item.name.toUpperCase().indexOf(_this2.state.filter.toUpperCase()) > -1 || item.code.toUpperCase().indexOf(_this2.state.filter.toUpperCase()) > -1) {
                     list.push(_react2.default.createElement(_StyledComponents.Input, { key: index, type: 'submit', value: item.name + " " + item.code, onClick: function onClick(e) {
                             return _this2.selectItem(item.name);
                         }, onFocus: function onFocus(e) {

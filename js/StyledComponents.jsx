@@ -6,7 +6,7 @@ width: 300px;
 background:
 justify-content: center;
 &:focus {
-  background: red;
+  background: Aquamarine;
 }
 `;
 

@@ -37,10 +37,10 @@ class App extends React.Component {
     }
 
     render() {
-      
+
         let list = [];
         this.state.cities.forEach((item, index) => {
-            if (item.name.indexOf(this.state.filter) > -1 || item.code.indexOf(this.state.filter) > -1) {
+            if (item.name.toUpperCase().indexOf(this.state.filter.toUpperCase()) > -1 || item.code.toUpperCase().indexOf(this.state.filter.toUpperCase()) > -1) {
                 list.push(
                     <Input key={index} type="submit" value={item.name + " " + item.code} onClick={e => this.selectItem(item.name)} onFocus={e => this.focusedItem()}  readOnly></Input>)
             }
